@@ -1,0 +1,17 @@
+# Ignorer les fichiers binaires générés
+/target/
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers de configuration spécifiques à l'environnement
+**/*.rs.bk
+.idea/
+.vscode/
+
+# Ignorer les fichiers de sauvegarde temporaires
+*.swp
+*.swo
+
+# Ignorer les fichiers générés par Rust/Cargo
+Cargo.lock
