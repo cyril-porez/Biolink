@@ -14,6 +14,7 @@ async fn main() {
     let client = connect_db().await.expect("Impossible de se connecter à PostgreSQL");
     let users = get_users(&client).await.expect("Erreur lors de la récupération des utilisateurs");
     println!("Utilisateurs : {:?}", users.get(0));
+    println!("Utilisateurs : {:?}", users.get(1));
     let mut test  = 0;
     if let Some((id,_,_)) = users.get(0) {
         test = *id;
